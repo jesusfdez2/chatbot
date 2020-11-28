@@ -1,0 +1,40 @@
+<html>
+    <head>
+        <script>
+            know = {
+                
+                "hola" : "Hola, como estás?",                
+                "como estás?" : "Bien, y tú?",
+                "como estás" : "Bien, y tú?",
+                "como estas" : "Bien, y tú?",                
+                "cual es tu nombre" :"Mi nombre es Kefla",                
+                "bien" : "Qué bien!",                
+                "que tal" : "Qué bien!",
+
+
+
+
+                
+            };
+            function talk() {
+                var user = document.getElementById("userBox").value;
+                document.getElementById("userBox").value = "";
+                document.getElementById("chatLog").innerHTML += user+"<br>";
+                if (user in know) {
+                    document.getElementById("chatLog").innerHTML += know[user]+"<br>";
+                } else {
+                    document.getElementById("chatLog").innerHTML += "No reconozco mayusculas,tildes ni signos<br>";
+                }
+            } 
+        </script>
+    </head>
+    <link rel="stylesheet" href="index.css">
+    <body>
+        <div class="contenedor">
+        <img src="Imagenes/Kefla.jpg" alt="">
+        <p id="chatLog">- - C H A T - -<br></p>
+       
+        <input id="userBox" placeholder="Hola! Soy tu waifu" type="text" onkeydown="if (event.keyCode == 13) {talk()}">
+        </div>
+    </body>
+</html>
