@@ -19,3 +19,16 @@ p{
     margin-left: 500px;
     width: 300px;
 }
+
+@media (max-width: 900px){
+    img{
+        width: 80%;
+        margin: 0;
+    }
+    p{
+        margin: 0;
+    }
+    #userBox{
+        margin: 0;
+    }
+}
