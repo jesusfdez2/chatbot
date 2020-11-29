@@ -5,17 +5,80 @@ body{
 }
 
 img{
+    max-width: 300px;
     
-    width: 30%;
+    height: auto;
 }
 p{
     
     font-size: 20px;
 }
 
+#chatLog{
+    position: absolute;
+    margin-left: 50%;
+    max-height: 300px;
+  overflow-y: visible;
+    overflow-x: hidden;
+}
+
 #userBox{
-    
+    position: absolute;
+    margin-left: 50%;
     width: 300px;
+}
+
+
+.tabs{
+    width: 30rem;
+    
+	background: #fff;
+	border-radius: .3rem;
+	display: flex;
+	flex-wrap: wrap;
+}
+.tabs input{
+	display: none;
+}
+
+.tabs label{
+	float: 1;
+	text-align: center;
+	line-height: 3.6rem;
+	text-transform: uppercase;
+	font-weight: bold;
+	cursor: pointer;
+	margin: 30px;
+	transition: background-color .2s ease, box-shadow .2s ease;
+}
+.tabs label:hover{
+	background: #0001;
+}
+
+.tabs input:checked + label{
+	box-shadow: inset 0 -.2rem #ff506f;
+}
+.container{
+	display: flex;
+	overflow: hidden;
+}
+
+.contenido{
+	flex: 0 0 30rem;
+	padding: 2.4rem;
+	box-sizing: border-box;
+	transition: transform .5s ease;
+}
+
+.tabs input:nth-of-type(2):checked ~ .container .contenido{
+	transform: translateX(-100%);
+}
+
+.tabs input:nth-of-type(3):checked ~ .container .contenido{
+	transform: translateX(-200%);
+}
+.tabs input:nth-of-type(4):checked ~ .container .contenido{
+	transform: translateX(-300%);
 }
 
 @media screen and (min-device-width: 100px) and (max-device-width: 900px)    {
@@ -40,5 +103,75 @@ p{
     #userBox::placeholder{
         font-size: 40px;
     }
-
+    .tabs .tab-header > div {
+        height:50px;
+        line-height:50px;
+        font-size:30px;
+        font-weight:600;
+        color:#888;
+        cursor:pointer;
+        padding-left:10px;
+      }
 }
+/* -------------------------------------------------------------------------- */
+/*                                    TABS                                    */
+/* -------------------------------------------------------------------------- */
+/*
+.tabs {
+    max-width: 600px;
+    width:100%;
+    height:300px;
+    
+    
+    
+    overflow:hidden;
+  }
+  .tabs .tab-header {
+    float:left;
+    width:180px;
+    height:10px;
+    
+    padding:50px 0px;
+  }
+  .tabs .tab-header > div {
+    height:50px;
+    line-height:50px;
+    font-size:16px;
+    font-weight:600;
+    color:#888;
+    cursor:pointer;
+    padding-left:10px;
+    
+  }
+
+ 
+  .tabs .tab-header > div:hover,
+  .tabs .tab-header > div.active {
+    color:black;
+  }
+  .tabs .tab-header div i {
+    display:inline-block;
+    margin-left:10px;
+    margin-right:5px;
+    
+  }
+  .tabs .tab-content {
+    position:relative;
+    height:100%;
+    overflow:hidden;
+  }
+  
+  .tabs .tab-content > div {
+    position:absolute;
+    text-align:center;
+    padding:40px 20px;
+    top:-1000%;
+    transition:all 500ms ease-in-out;
+  }
+  .tabs .tab-content > div.active {
+    top:0px;
+  }
+  **/
+/* -------------------------------------------------------------------------- */
+/*                                   TABS 2                                   */
+/* -------------------------------------------------------------------------- */

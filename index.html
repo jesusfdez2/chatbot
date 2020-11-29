@@ -1,5 +1,6 @@
 <html>
     <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Waifu Chat</title>
         <script>
             know = {
@@ -9,13 +10,11 @@
                 "como estás" : "Bien, y tú?",
                 "como estas" : "Bien, y tú?",                
                 "cual es tu nombre" :"Mi nombre es Kefla",                
-                "bien" : "Qué bien!",                
-                "que tal" : "Qué bien!",
+                "bien" : "Me alegro mucho!",    
+                          
+                "que tal" : "Bien,gracias!",
 
 
-
-
-                
             };
             function talk() {
                 var user = document.getElementById("userBox").value;
@@ -31,11 +30,69 @@
     </head>
     <link rel="stylesheet" href="index.css">
     <body>
-        
-        <img src="Imagenes/Kefla.jpg" alt="">
-        <p id="chatLog">- - C H A T - -<br></p>
+        <p id="chatLog">- - C H A T - - <br> Si no os da ninguna respuesta, <br> deslizar hacia abajo el chat<br></p>
        
         <input id="userBox" placeholder="Hola! Soy tu waifu" type="text" onkeydown="if (event.keyCode == 13) {talk()}">
         
+        
+            <div class="tabs">
+            <input type="radio" name="tabs" id="seccion1" checked>
+            <label for="seccion1">Kefla</label>
+            <input type="radio" name="tabs" id="seccion2">
+            <label for="seccion2">Zero Two</label>
+            <input type="radio" name="tabs" id="seccion3">
+            <label for="seccion3">Rem</label>
+            
+    
+            <div class="container">
+                <div class="contenido"> <img src="Imagenes/Kefla.jpg" alt="">   </div>
+                <div class="contenido"><img src="Imagenes/ZeroTwo.jpg" alt=""> </div>
+                <div class="contenido"><img src="Imagenes/Rem.jpg" alt=""> </div>
+                
+            </div>
+        </div>
+       
+        
+   <!--- <body>
+        <div class="tabs">
+            <div class="tab-header">
+              <div class="active">
+                 Kefla
+              </div>
+              <div>
+                Zero Two
+              </div>
+              <div>
+                Rem
+              </div>
+              <div>
+                 Contact
+              </div>
+              
+            </div>
+            <div class="tab-indicator"></div>
+            <div class="tab-content">
+              
+              <div class="active">
+                <i class="fa fa-code"></i>
+                 <p><img src="Imagenes/Kefla.jpg" alt=""></p>
+              </div>
+              <div>
+                <p><img src="Imagenes/ZeroTwo.jpg" alt=""></p>
+            </div>
+            <div>
+                <p><img src="Imagenes/Rem.jpg" alt=""></p>
+            </div>
+              <div>
+                <i class="fa fa-bar-chart"></i>
+                <h2>This is services section</h2>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quis eum similique quisquam officiis neque, cumque dignissimos architecto nisi totam sapiente eos et illum laborum atque vero ea perferendis consectetur veritatis.</p>
+              </div>
+            </div>
+          </div>
+        -->
+
+        
     </body>
+    <script src="indexX.js"></script>
 </html>
