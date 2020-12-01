@@ -30,6 +30,21 @@ p{
     width: 300px;
 }
 
+.galeria{
+  background-color: #fff;
+  width: 30rem;
+  border-radius: .3rem;
+  margin-left: 50%;
+  position: relative;
+  margin-top: -100px;
+  max-height: 105px;
+  overflow-y: visible;
+  overflow-x: hidden;
+  display: block;
+}
+.galeriaAN{
+  display: none;
+}
 .android{
     display: none;
 }
@@ -111,8 +126,21 @@ p{
         margin-left: 0;
         width: 300px;
     }
-    
-
+    .galeria{
+      display: none;
+    }
+    .galeriaAN{
+      background-color: #fff;
+      width: 30rem;
+      border-radius: .3rem;
+      margin-left: 0;
+      position: relative;
+      margin-top: 0px;
+      max-height: 105px;
+      overflow-y: visible;
+      overflow-x: hidden;
+      display: block;
+    }
     
     
 }

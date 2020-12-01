@@ -10,12 +10,15 @@
                 "como estás" : "Bien, y tú?",
                 "como estas" : "Bien, y tú?",                
                 "cual es tu nombre" :"Mi nombre es Kefla",                
-                "bien" : "Me alegro mucho!",    
-                          
+                "bien" : "Me alegro mucho!",                            
                 "que tal" : "Bien,gracias!",
-
+                "puedes decir onii chan daisuki" : "Onii-chan Daisuki ♥",
+                "puedes decir owo" : "owo ♥",
+                "puedes decir rawr" : "Rawr ♥",
 
             };
+            
+
             function talk() {
                 var user = document.getElementById("userBox").value;
                 document.getElementById("userBox").value = "";
@@ -26,16 +29,24 @@
                     document.getElementById("chatLog").innerHTML += "No reconozco mayusculas,tildes ni signos<br>";
                 }
             } 
+            
+
         </script>
         
     </head>
     <link rel="stylesheet" href="index.css">
     <body>
-        <p id="chatLog">- - C H A T - - <br> Si no os da ninguna respuesta, <br> deslizar hacia abajo el chat<br></p>
-           
-            <input id="userBox" placeholder="Hola! Soy tu waifu" type="text" onkeydown="if (event.keyCode == 13) {talk()}">
-            
         
+              
+        <p id="chatLog">- - C H A T - - <br> Si no os da ninguna respuesta, <br> deslizar hacia abajo el chat<br></p>
+            <input id="userBox" placeholder="Hola! Soy tu waifu" type="text" onkeydown="if (event.keyCode == 13) {talk()}">
+            <div class="galeriaAN">
+              Galería de interacción con tu waifu (BETA)
+              <audio src="Audio/Saludo/Ohayo.mp3"  controls=""></audio> Ohayougozaimasu!
+        <audio src="Audio/Onichand/Onichan.mp3"   controls=""></audio> Onichan
+        <audio src="Audio/Onichand/owo.mp3"  controls=""></audio> owo
+        <audio src="Audio/Onichand/rawr.mp3"  controls=""></audio> rawr
+        </div>
             <div class="tabs">
             <input type="radio" name="tabs" id="seccion1" checked>
             <label for="seccion1">Kefla</label>
@@ -43,17 +54,22 @@
             <label for="seccion2">Zero Two</label>
             <input type="radio" name="tabs" id="seccion3">
             <label for="seccion3">Rem</label>
-            
-    
+             
             <div class="container">
                 <div class="contenido"> <img src="Imagenes/Kefla.jpg" alt="">   </div>
                 <div class="contenido"><img src="Imagenes/ZeroTwo.jpg" alt=""> </div>
                 <div class="contenido"><img src="Imagenes/Rem.jpg" alt=""> </div>
                 
             </div>
+           
         </div>
         
-            
+            <div class="galeria">
+              Galería de interacción con tu waifu (BETA)
+        <audio src="Audio/Onichand/Onichan.mp3"   controls=""></audio> Onichan
+        <audio src="Audio/Onichand/owo.mp3"  controls=""></audio> owo
+        <audio src="Audio/Onichand/rawr.mp3"  controls=""></audio> rawr
+        </div>
         
    <!--- <body>
         <div class="tabs">
