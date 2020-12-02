@@ -17,6 +17,7 @@
                 "puedes decir rawr" : "Rawr ♥",
 
             };
+
             
 
             function talk() {
@@ -36,17 +37,7 @@
     </head>
     <link rel="stylesheet" href="index.css">
     <body>
-        
-              
-        <p id="chatLog">- - C H A T - - <br> Si no os da ninguna respuesta, <br> deslizar hacia abajo el chat<br></p>
-            <input id="userBox" placeholder="Hola! Soy tu waifu" type="text" onkeydown="if (event.keyCode == 13) {talk()}">
-            <div class="galeriaAN">
-              Galería de interacción con tu waifu (BETA)
-              <audio src="Audio/Saludo/Ohayo.mp3"  controls=""></audio> Ohayougozaimasu!
-        <audio src="Audio/Onichand/Onichan.mp3"   controls=""></audio> Onichan
-        <audio src="Audio/Onichand/owo.mp3"  controls=""></audio> owo
-        <audio src="Audio/Onichand/rawr.mp3"  controls=""></audio> rawr
-        </div>
+        <div class="waifus">
             <div class="tabs">
             <input type="radio" name="tabs" id="seccion1" checked>
             <label for="seccion1">Kefla</label>
@@ -61,16 +52,37 @@
                 <div class="contenido"><img src="Imagenes/Rem.jpg" alt=""> </div>
                 
             </div>
-           
+           </div>
         </div>
+              <div class="chatx">
+        <p id="chatLog">- - C H A T - - <br> Si no os da ninguna respuesta, <br> deslizar hacia abajo el chat<br></p>
+            <input id="userBox" placeholder="Hola! Soy tu waifu" type="text" onkeydown="if (event.keyCode == 13) {talk()}">
+           <div id="container">
+        <a class="voice" href="#">Activar microfono</a>
+
+        <div class="chat-container">
+          <p class="voice2text">Hola</p>
+      </div>
+
+      <div class="chat-container darker">
+          <p class="voice2text">Para esta funcion se recomienda un navegador Chrome</p>
+      </div></div><!---
+            <div class="galeriaAN">
+              Galería de interacción con tu waifu (BETA)
+              
+        <audio src="Audio/Onichand/Onichan.mp3"   controls=""></audio> Onichan
+        <audio src="Audio/Onichand/owo.mp3"  controls=""></audio> owo
+        <audio src="Audio/Onichand/rawr.mp3"  controls=""></audio> rawr
+        </div>-->
         
+        <!----
             <div class="galeria">
               Galería de interacción con tu waifu (BETA)
         <audio src="Audio/Onichand/Onichan.mp3"   controls=""></audio> Onichan
         <audio src="Audio/Onichand/owo.mp3"  controls=""></audio> owo
         <audio src="Audio/Onichand/rawr.mp3"  controls=""></audio> rawr
         </div>
-        
+      -->
    <!--- <body>
         <div class="tabs">
             <div class="tab-header">
@@ -113,4 +125,5 @@
         
     </body>
     <script src="indexX.js"></script>
+    <script src="main.js"></script>
 </html>
