@@ -29,7 +29,7 @@ function addBotText(text) {
 
 function botVoice(message) {
     const speech = new SpeechSynthesisUtterance();
-    speech.text = "Lo siento, no tengo nada sobre esa frase";
+    speech.text = "Lo siento, actualmente estoy aprendiendo palabras nuevas";
 
     if (message.includes('hola')) {
       speech.text = "Hola, que tal estás?";
@@ -48,14 +48,34 @@ function botVoice(message) {
       speech.text = "Onii-chan Daisuki";
     }
 
-    if (message.includes('London')) {
-      speech.text = "It is 18 degrees and sunny.";
+    if (message.includes('qué tal')) {
+      speech.text = "Bien, gracias!";
+    }
+    if (message.includes('cómo estás')) {
+      speech.text = "Bien, y tú?";
+    }
+    if (message.includes('gracias')) {
+      speech.text = "No es nada, es un placer hablar contigo";
     }
 
+    if (message.includes('mal')) {
+      speech.text = "Oh, espero que te alegres al hablar conmigo. Por favor sonríe";
+    }
+    if (message.includes('quién eres')) {
+      speech.text = "Soy tu Waifu ❤️ Estoy aquí para lo que desees";
+    }
+    if (message.includes('cero entre cero')) {
+      speech.text = "Imagínate que tienes cero galletas y las repartes entre cero amigos. ¿Cuántas galletas le tocan a cada amigo? No tiene sentido. ¿Lo ves? Así que el monstruo de las galletas está triste porque no tiene galletas y tú estás triste porque no tienes amigos";
+    }
+    if (message.includes('eres linda')) {
+      speech.text = "Gracias, ojalá pudiera ver como eres. Quiero imaginarme que también eres muy lindo";
+    }
+    
     speech.volume = 1;
     speech.rate = 1;
     speech.pitch = 1;
     window.speechSynthesis.speak(speech);
+    
     var element = document.getElementById("container");
     element.appendChild(addBotText(speech.text));
 }

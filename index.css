@@ -196,10 +196,35 @@ a:hover {
   float: left;
   color: #999;
 }
-
+span { 
+	color: #711; 
+} 
+::-webkit-input-placeholder { 
+	color: #711 
+}
+#main { 
+	position: relative; margin-left: 50%; width: 400px; 
+	border: 0px solid #421; padding: 10px; 
+}
+#main div { 
+	margin: 10px; 
+} 
+#input { 
+	border: 0;  padding: 5px; border: 1px solid #421; 
+}
 
 @media screen and (min-device-width: 100px) and (max-device-width: 900px)    {
-    img{
+  
+  
+  #main { 
+    margin-left: 0px;
+  }
+  #main div { 
+    margin: 10px; 
+  } 
+  
+  
+  img{
         width: 80%;
         margin: 0;
         margin-left: 0px;
@@ -252,6 +277,9 @@ a:hover {
       position: relative;
       
     }
+
+
+    
 }
 /* -------------------------------------------------------------------------- */
 /*                                    TABS                                    */
