@@ -35,8 +35,11 @@ function botVoice(message) {
       speech.text = "Hola, que tal estás?";
     }
 
-    if (message.includes('adios')) {
+    if (message.includes('adiós')) {
       speech.text = "Cuidate";
+    }
+    if (message.includes('hasta la próxima')) {
+      speech.text = "Nos vemos luego uwu";
     }
 
 
